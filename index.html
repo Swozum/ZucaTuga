@@ -11,6 +11,13 @@
   <link rel="canonical" href="https://www.zucatuga.com" />
   <title>Aulas de Português Online</title>
   <link rel="stylesheet" href="style.css" />
+  <script>
+    const lang = navigator.language.slice(0, 2);
+    if (lang !== 'en') {
+      const currentUrl = window.location.href;
+      window.location.href = `https://translate.google.com/translate?hl=${lang}&sl=en&u=${encodeURIComponent(currentUrl)}`;
+    }
+  </script>
 </head>
 <body>
   <header>
