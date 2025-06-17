@@ -1,48 +1,154 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="pt">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aulas de Português Online</title>
+
+  <title>Aulas de Português Online | Aulas Personalizadas para Estrangeiros e Iniciantes</title>
+
+  <meta name="description" content="Aprenda português com aulas online ao vivo, personalizadas para iniciantes, estrangeiros e reforço escolar. Material incluso e metodologia adaptada." />
+  <meta name="keywords" content="aulas de português, português online, aprender português, português para estrangeiros, português iniciante, reforço escolar português" />
+  <meta name="author" content="Simone Aguiar" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph para redes sociais -->
+  <meta property="og:title" content="Aulas de Português Online" />
+  <meta property="og:description" content="Aulas online e personalizadas de português para iniciantes e estrangeiros. Flexibilidade, material incluso e Google Meet." />
+  <meta property="og:image" content="https://seudominio.com/imagem-capa.jpg" />
+  <meta property="og:url" content="https://seudominio.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon (opcional) -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Ícones -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Google Translate script -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'pt',
+        autoDisplay: false
+      }, 'google_translate_element');
+    }
+
+    function autoTranslate() {
+      const userLang = navigator.language || navigator.userLanguage;
+      const langCode = userLang.substring(0, 2);
+
+      const googleLangMap = {
+        'en': 'en',
+        'es': 'es',
+        'fr': 'fr',
+        'de': 'de',
+        'it': 'it'
+      };
+
+      if (langCode !== 'pt' && googleLangMap[langCode]) {
+        const interval = setInterval(() => {
+          const frame = document.querySelector('iframe.goog-te-banner-frame');
+          const select = document.querySelector('.goog-te-combo');
+          if (select) {
+            select.value = googleLangMap[langCode];
+            select.dispatchEvent(new Event('change'));
+            clearInterval(interval);
+          }
+        }, 500);
+      }
+    }
+  </script>
+
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <style>
+    #google_translate_element, .goog-te-banner-frame, .goog-logo-link, .goog-te-gadget {
+      display: none !important;
+    }
+    body {
+      top: 0px !important;
+    }
+  </style>
 </head>
-<body>
+<body onload="setTimeout(autoTranslate, 1000)">
+
   <header>
-    <h1>Aulas Online de Português</h1>
-    <p>Aprenda de forma simples, prática e no seu ritmo.</p>
+    <div class="container">
+      <h1>Aulas de Português Online</h1>
+      <p>Aprenda de forma simples, prática e no seu ritmo.</p>
+    </div>
   </header>
 
   <section class="sobre">
-    <h2>Sobre as Aulas</h2>
-    <p>
-      Ofereço aulas de português personalizadas para iniciantes, estrangeiros e
-      reforço escolar. As aulas são online, ao vivo, com foco nas suas
-      necessidades: conversação, gramática, escrita e muito mais.
-    </p>
+    <div class="container">
+      <h2>Sobre as Aulas</h2>
+      <p>
+        Ofereço aulas de português personalizadas para iniciantes, estrangeiros e reforço escolar.
+        As aulas são online, ao vivo, com foco nas suas necessidades: conversação, gramática,
+        escrita e muito mais.
+      </p>
+    </div>
+  </section>
+
+  <section class="videos">
+    <div class="container">
+      <h2>Vídeos das Aulas</h2>
+      <p>Veja alguns trechos curtos das nossas aulas para conhecer o estilo e a metodologia.</p>
+      <div class="video-grid">
+        <iframe width="100%" height="250" src="https://www.youtube.com/embed/VIDEO_ID_1" 
+          title="Vídeo Aula 1" frameborder="0" allowfullscreen></iframe>
+        <iframe width="100%" height="250" src="https://www.youtube.com/embed/VIDEO_ID_2" 
+          title="Vídeo Aula 2" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
   </section>
 
   <section class="destaques">
-    <h2>Por que escolher minhas aulas?</h2>
-    <ul>
-      <li>✅ Metodologia adaptada ao seu nível</li>
-      <li>✅ Material incluso e personalizado</li>
-      <li>✅ Aulas ao vivo pelo Google Meet</li>
-      <li>✅ Horários flexíveis</li>
-    </ul>
+    <div class="container">
+      <h2>Por que escolher minhas aulas?</h2>
+      <ul>
+        <li><i class="fa-solid fa-check"></i> Metodologia adaptada ao seu nível</li>
+        <li><i class="fa-solid fa-check"></i> Material incluso e personalizado</li>
+        <li><i class="fa-solid fa-check"></i> Aulas ao vivo pelo Google Meet</li>
+        <li><i class="fa-solid fa-check"></i> Horários flexíveis</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="fotos">
+    <div class="container">
+      <h2>Galeria de Fotos</h2>
+      <p>Confira imagens das aulas, materiais e momentos especiais.</p>
+      <div class="foto-grid">
+        <img src="img/foto1.jpg" alt="Foto 1 da aula" />
+        <img src="img/foto2.jpg" alt="Foto 2 da aula" />
+        <img src="img/foto3.jpg" alt="Foto 3 da aula" />
+      </div>
+    </div>
   </section>
 
   <section class="contato">
-    <h2>Entre em Contato</h2>
-    <p>E-mail: <a href="mailto:simoneaguiaraulas@gmail.com">simoneaguiaraulas@gmail.com</a></p>
-    <p>WhatsApp: <a href="https://wa.me/351912345678" target="_blank">+351 912 345 678</a></p>
-    <div class="redes">
-      <a href="#" target="_blank">Instagram</a>
-      <a href="#" target="_blank">Facebook</a>
+    <div class="container">
+      <h2>Entre em Contato</h2>
+      <p><i class="fa-solid fa-envelope"></i> <a href="mailto:simoneaguiaraulas@gmail.com">simoneaguiaraulas@gmail.com</a></p>
+      <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/351912345678" target="_blank">+351 912 345 678</a></p>
+      <div class="redes">
+        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+      </div>
     </div>
   </section>
 
   <footer>
     <p>&copy; 2025 Aulas de Português com Tugazuca</p>
   </footer>
-</body>
+
+  
+  <div id="google_translate_element" style="display: none;"></div>
+
+</body> 
 </html>
+
