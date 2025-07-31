@@ -18,10 +18,18 @@
   <meta property="og:url" content="https://seudominio.com" />
   <meta property="og:type" content="website" />
 
+
+  <link rel="alternate" href="https://seudominio.com" hreflang="pt" />
+  <link rel="alternate" href="https://seudominio.com/en/" hreflang="en" />
+  <link rel="alternate" href="https://seudominio.com/es/" hreflang="es" />
+  <link rel="alternate" href="https://seudominio.com/fr/" hreflang="fr" />
+  <link rel="alternate" href="https://seudominio.com/de/" hreflang="de" />
+
+
   <!-- Favicon (opcional) -->
-  <link rel="icon" type="image/png" sizes="32x32" href="faviconZuca.ico" />
-  <link rel="icon" type="image/png" sizes="16x16" href="faviconZuca.ico" />
-  <link rel="shortcut icon" href="faviconZuca.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/logo.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/logo.ico" />
+  <link rel="shortcut icon" href="icons/logo.ico" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.8392hf23.css" />
@@ -30,116 +38,133 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
   <!-- Google Translate script -->
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({
-        pageLanguage: 'pt',
-        autoDisplay: false
-      }, 'google_translate_element');
-    }
-
-    function autoTranslate() {
-      const userLang = navigator.language || navigator.userLanguage;
-      const langCode = userLang.substring(0, 2);
-
-      const googleLangMap = {
-        'en': 'en',
-        'es': 'es',
-        'fr': 'fr',
-        'de': 'de',
-        'it': 'it'
-      };
-
-      if (langCode !== 'pt' && googleLangMap[langCode]) {
-        const interval = setInterval(() => {
-          const frame = document.querySelector('iframe.goog-te-banner-frame');
-          const select = document.querySelector('.goog-te-combo');
-          if (select) {
-            select.value = googleLangMap[langCode];
-            select.dispatchEvent(new Event('change'));
-            clearInterval(interval);
-          }
-        }, 500);
-      }
-    }
-  </script>
-
-  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-  <style>
-    #google_translate_element, .goog-te-banner-frame, .goog-logo-link, .goog-te-gadget {
-      display: none !important;
-    }
-    body {
-      top: 0px !important;
-    }
-  </style>
+  
 </head>
-<body onload="setTimeout(autoTranslate, 1000)">
+<body>
 
   <header>
-    <div class="container">
-      <h1>Aulas de Português Online</h1>
-      <p>Aprenda de forma simples, prática e no seu ritmo.</p>
+  <div class="container">
+    <div class="image1">
+      <img src="img/logo.jpg" alt="Logo ZucaTuga">
     </div>
-  </header>
-
-  <section class="sobre">
-    <div class="container">
-      <h2>Sobre as Aulas</h2>
-      <p>
-        Ofereço aulas de português personalizadas para iniciantes, estrangeiros e reforço escolar.
-        As aulas são online, ao vivo, com foco nas suas necessidades: conversação, gramática,
-        escrita e muito mais.
-      </p>
+    <div class="menu">
+      <a href="#sobre"><h2>Sobre Mim</h2></a>
+      <a href="#metodologias"><h2>Sobre as Aulas</h2></a>
+      <a href="#precos"><h2>Preços</h2></a>
+      <a href="#contactos"><h2>Contactos</h2></a>
     </div>
-  </section>
+  </div>
+  <div class="language-switcher">
+    <a href="/pt/">🇵🇹 Português</a> 
+    <a href="/en/">🇬🇧 English</a> 
+    <a href="/es/">🇪🇸 Español</a> 
+    <a href="/fr/">🇫🇷 Français</a> 
+    <a href="/de/">🇩🇪 Deutsch</a> 
+  </div>
 
-  <section class="videos">
-    <div class="container">
-      <h2>Vídeos das Aulas</h2>
-      <p>Veja alguns trechos curtos das nossas aulas para conhecer o estilo e a metodologia.</p>
-      <div class="video-grid">
-        <iframe width="100%" height="250" src="https://www.youtube.com/embed/VIDEO_ID_1" 
-          title="Vídeo Aula 1" frameborder="0" allowfullscreen></iframe>
-        <iframe width="100%" height="250" src="https://www.youtube.com/embed/VIDEO_ID_2" 
-          title="Vídeo Aula 2" frameborder="0" allowfullscreen></iframe>
+</header>
+
+
+  <div class="image-front">
+      <img src="img/orla.jpg" alt="">
+  </div>
+
+  <!-- Seção Sobre -->
+  <section class="sobre" id="sobre">
+    <div class="container row">
+      <div class="text">
+        <h2>Sobre Mim</h2>
+        <p>
+          Olá! Eu sou a Simone, criadora do Zuca Tuga — um espaço dedicado ao ensino acolhedor e criativo do português para estrangeiros. Sou brasileira, vivo em Portugal, e acredito no poder das línguas para aproximar pessoas, culturas e histórias.
+        </p>
+        <p>
+          Sou formada em Letras pela Universidade Estácio de Sá, com especialização em Ensino de Literatura pela Universidade Federal do Rio Grande do Norte, Linguística Aplicada ao Ensino de Línguas pela Universidade Federal do Mato Grosso do Sul e Ensino de Português para Estrangeiros pela Universidade Católica do Rio de Janeiro. Atualmente, sou mestranda em Ensino de Português como Língua Estrangeira.
+        </p>
+        <p>
+          Minha formação sempre esteve voltada para a linguagem como expressão de identidade, cultura e criatividade — e foi justamente essa paixão que me levou ao ensino do português como língua adicional. Ao longo do tempo, venho construindo uma trajetória sólida como professora, reunindo experiências com alunos de diferentes nacionalidades, perfis e contextos. Acredito que aprender uma nova língua vai muito além da gramática: é um encontro com outras formas de viver, pensar e sentir. E é isso que me move como educadora.
+        </p>
+        <p>
+          O Zuca Tuga nasceu desse desejo de conectar o melhor do Brasil e de Portugal — com afeto, autenticidade e compromisso com a diversidade. Aqui, cada aula é pensada com cuidado, respeitando o ritmo e os objetivos de cada aluno.
+          Seja muito bem-vindo(a/o) à nossa comunidade!
+        </p>
+      </div>
+      <div class="image">
+        <img src="img/perfil.jpg" alt="...">
+
       </div>
     </div>
   </section>
 
-  <section class="destaques">
-    <div class="container">
-      <h2>Por que escolher minhas aulas?</h2>
-      <ul>
-        <li><i class="fa-solid fa-check"></i> Metodologia adaptada ao seu nível</li>
-        <li><i class="fa-solid fa-check"></i> Material incluso e personalizado</li>
-        <li><i class="fa-solid fa-check"></i> Aulas ao vivo pelo Google Meet</li>
-        <li><i class="fa-solid fa-check"></i> Horários flexíveis</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="fotos">
-    <div class="container">
-      <h2>Galeria de Fotos</h2>
-      <p>Confira imagens das aulas, materiais e momentos especiais.</p>
-      <div class="foto-grid">
-        <img src="img/foto1.jpg" alt="Foto 1 da aula" />
-        <img src="img/foto2.jpg" alt="Foto 2 da aula" />
-        <img src="img/foto3.jpg" alt="Foto 3 da aula" />
+  <!-- Seção Destaques -->
+  <section class="destaques" id="metodologias">
+    <div class="container row reverse">
+      <div class="text">
+        <h2>Sobre as Aulas</h2>
+        <p>
+          No Zuca Tuga, as aulas de português são pensadas para você que quer aprender de forma leve, prática e conectada com a vida real.
+        </p>
+        <p>
+          Trabalhamos com o ensino comunicativo e baseado em tarefas, o que significa que você aprende a língua enquanto desenvolve habilidades para se comunicar em situações autênticas — no trabalho, nas viagens, nas conversas do dia a dia.
+        </p>
+        <p>
+          As aulas são online, ao vivo e personalizadas de acordo com o seu nível (A1 a C2) e objetivos. Usamos materiais interativos, vídeos, jogos, textos literários, músicas, elementos culturais e muito mais para tornar cada encontro dinâmico e significativo.
+        </p>
+        <h3>
+          Você vai aprender:
+        </h3>
+        <ul>
+          <li><i class="fa-solid fa-check"></i> A se apresentar e se expressar com naturalidade</li>
+          <li><i class="fa-solid fa-check"></i> Vocabulário útil para diferentes contextos (viagens, compras, vida profissional, etc.)</li>
+          <li><i class="fa-solid fa-check"></i> Gramática em contexto</li>
+          <li><i class="fa-solid fa-check"></i> Diferenças entre o português do Brasil e o de Portugal</li>
+          <li><i class="fa-solid fa-check"></i> Aspectos culturais que fazem toda a diferença na comunicação</li>
+        </ul>
+        <h4>
+          Seja para começar do zero ou para ganhar fluência, nossas aulas acompanham o seu ritmo, valorizam a sua história e respeitam suas necessidades.
+        </h4>
+        <h4>
+          Aqui, aprender português é também celebrar os encontros entre culturas. Vamos nessa?
+        </h4>
+      </div>
+      <div class="image">
+        <img src="img/rj.png">
       </div>
     </div>
   </section>
 
-  <section class="contato">
-    <div class="container">
-      <h2>Entre em Contato</h2>
-      <p><i class="fa-solid fa-envelope"></i> <a href="mailto:simoneaguiaraulas@gmail.com">simoneaguiaraulas@gmail.com</a></p>
-      <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/351912345678" target="_blank">+351 912 345 678</a></p>
-      <div class="redes">
-        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
-        <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+  <!-- Seção Preços -->
+  <section class="destaques" id="precos">
+    <div class="container row">
+      <div class="text">
+        <h2>Preços</h2>
+        <ul>
+          <li><i class="fa-solid fa-check"></i> 1 aula na semana por 65€/mês</li>
+          <li><i class="fa-solid fa-check"></i> 2 aulas na semana por 110€/mês</li>
+          <li><i class="fa-solid fa-check"></i> 3 aulas na semana por 170€/mês</li>
+          <li><i class="fa-solid fa-check"></i> 4 aulas na semana por 230€/mês </li>
+          <li><i class="fa-solid fa-check"></i> 5 aulas na semana por 290€/mês </li>
+        </ul>
+      </div>
+      <div class="image">
+        <img src="img/bondinho.jpg">
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Contato -->
+  <section class="contato" id="contactos">
+    <div class="container row reverse">
+      <div class="text">
+        <h2>Entre em Contato</h2>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:simoneaguiaraulas@gmail.com">simoneaguiaraulas@gmail.com</a></p>
+        <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/+351926473988" target="_blank">+351 926 473 988</a></p>
+        <div class="redes">
+          <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+        </div>
+      </div>
+      <div class="image">
+        <img src="img/fotoconvento.png" alt="...">
       </div>
     </div>
   </section>
@@ -149,8 +174,16 @@
   </footer>
 
   
-  <div id="google_translate_element" style="display: none;"></div>
+</body>
+<script>
+if (!localStorage.getItem('langSelected')) {
+  const lang = navigator.language || navigator.userLanguage;
+  if (lang.startsWith('en')) window.location.href = '/en/';
+  else if (lang.startsWith('es')) window.location.href = '/es/';
+  else window.location.href = '/pt/';
+  localStorage.setItem('langSelected', '1');
+}
+</script>
 
-</body> 
 </html>
 
