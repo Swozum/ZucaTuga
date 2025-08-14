@@ -1,170 +1,673 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cours de Portugais en Ligne | Cours Personnalisés pour Étrangers et Débutants</title>
-
-  <meta name="description" content="Apprenez le portugais avec des cours en ligne en direct, personnalisés pour les débutants, les étrangers et le soutien scolaire. Matériel inclus et méthode adaptée." />
-  <meta name="keywords" content="cours de portugais, portugais en ligne, apprendre le portugais, portugais pour étrangers, portugais débutant, soutien scolaire portugais" />
+  <meta name="google-site-verification" content="-feILIjz8jwMgbnWNEvC0D1UkRDsYVrk35nPLEB_9TY" />
+  <title>Cours de Portugais en Ligne | Leçons Personnalisées pour Débutants et Étrangers</title>
+<meta name="description" content="Apprenez le portugais avec des cours en ligne en direct, personnalisés pour les débutants, les étrangers et le soutien scolaire. Matériel inclus et méthodologie adaptée." />
+<meta name="keywords" content="cours de portugais, portugais en ligne, apprendre le portugais, portugais pour étrangers, portugais débutant, soutien scolaire portugais" />
   <meta name="author" content="Simone Aguiar" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.zucatuga.com/fr/" />
-
-  <!-- Open Graph -->
+  <link rel="canonical" href="https://www.zucatuga.com" />
+  <!-- Open Graph para redes sociais -->
   <meta property="og:title" content="Cours de Portugais en Ligne" />
-  <meta property="og:description" content="Cours de portugais en ligne et personnalisés pour débutants et étrangers. Flexibilité, matériel inclus et Google Meet." />
-  <meta property="og:image" content="https://seudominio.com/imagem-capa.jpg" />
-  <meta property="og:url" content="https://seudominio.com/fr/" />
+<meta property="og:description" content="Cours de portugais en ligne et personnalisés pour débutants et étrangers. Flexibilité, matériel inclus et Google Meet." />
+  <meta property="og:image" content="https://https://zucatuga.com/img/logo.jpg" />
+  <meta property="og:url" content="https://zucatuga.com" />
   <meta property="og:type" content="website" />
 
-  <link rel="alternate" href="https://seudominio.com" hreflang="pt" />
-  <link rel="alternate" href="https://seudominio.com/en/" hreflang="en" />
-  <link rel="alternate" href="https://seudominio.com/es/" hreflang="es" />
-  <link rel="alternate" href="https://seudominio.com/fr/" hreflang="fr" />
-  <link rel="alternate" href="https://seudominio.com/de/" hreflang="de" />
 
+<link rel="alternate" href="https://zucatuga.com" hreflang="pt" />
+  <link rel="alternate" href="https://zucatuga.com/en/" hreflang="en" />
+  <link rel="alternate" href="https://zucatuga.com/es/" hreflang="es" />
+  <link rel="alternate" href="https://zucatuga.com/fr/" hreflang="fr" />
+  <link rel="alternate" href="https://zucatuga.com/de/" hreflang="de" />
+  <link rel="alternate" href="https://zucatuga.com/ru/" hreflang="ru" />
+  <link rel="alternate" href="https://zucatuga.com/zh/" hreflang="zh" />
+
+  <!-- Favicon (opcional) -->
   <link rel="icon" type="image/png" sizes="32x32" href="../icons/logo.ico" />
   <link rel="icon" type="image/png" sizes="16x16" href="../icons/logo.ico" />
   <link rel="shortcut icon" href="../icons/logo.ico" />
 
-  <link rel="stylesheet" href="../style.8392hf23.css" />
+  <!-- CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+  <style>
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-in-up {
+    animation: fadeInUp 1.0s ease-out forwards;
+  }
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .fade-in-left {
+    animation: fadeInLeft 1.0s ease-out forwards;
+  }
+</style>
+
+  
+  
+  <!-- Ícones -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Google Translate script -->
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const el = entry.target;
+
+        if (entry.isIntersecting) {
+          if (el.classList.contains("section-fade-up")) {
+            el.classList.add("fade-in-up");
+          }
+          if (el.classList.contains("section-fade-left")) {
+            el.classList.add("fade-in-left");
+          }
+          el.classList.remove("opacity-0");
+        } else {
+          el.classList.remove("fade-in-up", "fade-in-left");
+          el.classList.add("opacity-0");
+        }
+      });
+    }, {
+      threshold: 0.1,
+    });
+
+    document.querySelectorAll(".section-fade-up, .section-fade-left").forEach((el) => {
+      observer.observe(el);
+    });
+  });
+</script>
+
+
+
 </head>
-<body>
+<body class="w-screen min-h-screen overflow-x-clip">
 
-  <header>
-    <div class="container">
-      <div class="image1">
-        <img src="../img/logo.jpg" alt="Logo ZucaTuga">
-      </div>
-      <div class="menu">
-        <a href="#a-propos"><h2>À propos</h2></a>
-        <a href="#cours"><h2>À propos des Cours</h2></a>
-        <a href="#tarifs"><h2>Tarifs</h2></a>
-        <a href="#contact"><h2>Contact</h2></a>
+  <header class="sticky top-0 z-50">
+  <div class="navbar bg-[#F7F4E8] shadow-sm">
+
+    <!-- Logo -->
+    <div class="flex-1">
+      <img class="w-24 sm:w-32 md:w-40" src="../img/logo.jpg" alt="Logo ZucaTuga">
+    </div>
+
+    <!-- Menus container -->
+    <div class="flex-none flex gap-4">
+
+      <!-- Other Menu -->
+      <!-- Desktop -->
+      <ul class="menu menu-horizontal px-1 text-lg sm:text-xl md:text-2xl hidden sm:flex">
+        <li><a href="#modeloAulas" class="hover:bg-[#004173] hover:text-white">À propos des Cours</a></li>
+        <li><a href="#sobre" class="hover:bg-[#004173] hover:text-white">À propos de Moi</a></li>
+        <li><a href="#metodologias" class="hover:bg-[#004173] hover:text-white">FAQ</a></li>
+        <li><a href="#precos" class="hover:bg-[#004173] hover:text-white">Tarifs</a></li>
+        <li><a href="#contactos" class="hover:bg-[#004173] hover:text-white">Contacts</a></li>
+      </ul>
+
+      <!-- Mobile Menu -->
+      <ul class="menu menu-vertical px-1 text-lg sm:hidden">
+        <li>
+          <details>
+            <summary class="px-3 py-2 rounded-lg hover:bg-[#004173] hover:text-white">Menu</summary>
+            <ul class="bg-blue-100 rounded-xl shadow p-2 min-w-[10rem]
+                     sm:absolute sm:right-0 sm:top-full sm:z-50
+                     sm:max-w-[calc(100vw-1rem)] sm:overflow-x-hidden ">
+              <li class="hover:bg-[#004173] hover:text-white"><a href="#modeloAulas" >À propos des Cours</a></li>
+              <li class="hover:bg-[#004173] hover:text-white"><a href="#sobre" >À propos de Moi</a></li>
+              <li class="hover:bg-[#004173] hover:text-white"><a href="#metodologias" >FAQ</a></li>
+              <li class="hover:bg-[#004173] hover:text-white"><a href="#precos" >Tarifs</a></li>
+              <li class="hover:bg-[#004173] hover:text-white"><a href="#contactos" >Contacts</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+
+      <!-- Línguas Menu -->
+      <ul class="menu menu-vertical sm:menu-horizontal px-1 text-lg sm:text-xl md:text-2xl">
+        <li class="relative">
+          <details class="relative">
+            <summary class="px-3 py-2 rounded-lg hover:bg-[#004173] hover:text-white">
+              Langue
+            </summary>
+            <ul
+              class="bg-blue-100 rounded-xl shadow p-2 min-w-[10rem]
+                     sm:absolute sm:right-0 sm:top-full sm:z-50
+                     sm:max-w-[calc(100vw-1rem)] sm:overflow-x-hidden">
+              <li><a href="..">🇵🇹 Português</a></li>
+              <li><a href="/en/">🇬🇧 English</a></li>
+              <li><a href="/es/">🇪🇸 Español</a></li>
+              <li><a href="/fr/">🇫🇷 Français</a></li>
+              <li><a href="/de/">🇩🇪 Deutsch</a></li>
+              <li><a href="/zh/">🇨🇳 中文</a></li>
+              <li><a href="/ru/">🇷🇺 Русский</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</header>
+
+
+
+
+  <div
+    class="hero min-h-screen"
+    style="background-image: url(../img/city-of-rio-de-janeiro.jpg)"
+  >
+    <div class="hero-overlay"></div>
+    <div class="hero-content text-neutral-content text-center">
+      <div class="max-w-md">
+        <h1 class="mb-5 text-5xl font-bold">
+          <span class="text-red-500">Appr</span><span class="text-green-700">enez</span> 
+          <span class="text-green-500">le Portu</span><span class="text-yellow-300">gais</span>
+        </h1>
+        <p class="mb-5 text-lg">
+          Faisons du portugais un pont vers le monde !
+        </p>
       </div>
     </div>
-    <div class="language-switcher">
-      <a href="..">🇵🇹 Português</a> 
-      <a href="/en/">🇬🇧 English</a> 
-      <a href="/es/">🇪🇸 Español</a> 
-      <a href="/fr/">🇫🇷 Français</a> 
-      <a href="/de/">🇩🇪 Deutsch</a>
-    </div>
-  </header>
-
-  <div class="image-front">
-    <img src="../img/orla.jpg" alt="">
+  </div>
+  <div class="flex w-full bg-[#F7F4E8]  flex-col">
+    <div class="divider opacity-0"></div>
+    <div class="divider opacity-0 "></div>
+    <div class="divider opacity-0 "></div>
   </div>
 
-  <!-- Cours -->
-  <section class="destaques" id="cours">
-    <div class="container row reverse">
-      <div class="text">
-        <h2>À propos des cours</h2>
-        <p>
-          Chez Zuca Tuga, les cours de portugais sont créés avec soin, créativité et une attention particulière à vos besoins. 
-          Nous croyons que l’apprentissage d’une nouvelle langue doit être une expérience captivante, enrichissante et connectée à la vie réelle.
-        </p>
-        <p>
-          Nous travaillons avec une approche communicative et basée sur les tâches, ce qui signifie que vous apprenez à vous exprimer en portugais tout en développant des compétences pour des situations réelles : 
-          parler dans la vie quotidienne, voyager, étudier, travailler ou simplement plonger dans la culture. 
-          Les cours sont en ligne, en direct, et personnalisés selon votre niveau (A1 à C2), votre style d’apprentissage et vos objectifs — qu’ils soient professionnels, académiques ou pour le plaisir.
-        </p>
-        <p>
-          Notre méthodologie combine un accent sur la conversation, la phonétique multisensorielle, la grammaire en contexte, 
-          la production orale et écrite spontanée, ainsi que l’enseignement du vocabulaire et des expressions idiomatiques dans des situations réelles. 
-          Tout cela est intégré à l’utilisation de jeux, de musique, de littérature, d’art et d’éléments culturels du Brésil et du Portugal — 
-          rendant chaque cours dynamique, vivant et inspirant.
-        </p>
-        <p>
-          Plus qu’enseigner le portugais, nous voulons que vous vous sentiez accueilli(e), confiant(e) et motivé(e) à explorer la langue avec liberté et curiosité. 
-          Ici, votre rythme est respecté et votre histoire a toute sa place.
-        </p>
-        <h4>
-          Venez apprendre le portugais avec quelqu’un qui aime enseigner — et qui croit que les langues construisent des ponts.
-        </h4>
-      </div>
-      <div class="image">
-        <img src="../img/rj.png">
-      </div>
-    </div>
-  </section>
+  <section id="modeloAulas" class="bg-[#004173] section-fade-up opacity-0">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6 bg-[#004173]">
+    <div class="mx-auto max-w-screen-sm">
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-black">À propos des Cours</h2>
+      <p class="mb-8 font-light text-white lg:mb-16 sm:text-xl "></p>
+    </div> 
+    <div class="grid gap-6 mb-8 lg:mb-12 lg:grid-cols-3">
 
+      <!-- Bloc 1 -->
+      <figure class="flex flex-col justify-center justify-start items-center p-8 text-start bg-gray-50 rounded-lg border border-black lg:border-r md:p-12">
+        <blockquote class="max-w-2xl text-gray-500">
+          <h2 class="text-xl text-center font-bold text-gray-900 mb-4">
+            Des cours qui vous connectent à la langue
+          </h2>
+          <p class="mb-4">
+            Chez Zuca Tuga, les cours de portugais sont pensés pour vous — qui souhaitez apprendre de manière légère, engageante et connectée à la vie réelle. Ici, l’apprentissage va bien au-delà de la grammaire : il devient une expérience créative, émotionnelle et significative.
+          </p>
+          <p>
+            Les cours sont en ligne et entièrement personnalisés, du niveau A1 au C2 (CECR). Chaque séance est planifiée selon votre rythme, vos objectifs et les contextes réels dans lesquels vous devez utiliser le portugais.
+          </p>
+        </blockquote>  
+      </figure>
 
-  <!-- Tarifs -->
-  <section class="destaques" id="tarifs">
-    <div class="container row">
-      <div class="text">
-        <h2>Tarifs</h2>
-        <ul>
-          <li><i class="fa-solid fa-check"></i> 1 cours par semaine pour 65€/mois</li>
-          <li><i class="fa-solid fa-check"></i> 2 cours par semaine pour 110€/mois</li>
-          <li><i class="fa-solid fa-check"></i> 3 cours par semaine pour 170€/mois</li>
-          <li><i class="fa-solid fa-check"></i> 4 cours par semaine pour 230€/mois</li>
-          <li><i class="fa-solid fa-check"></i> 5 cours par semaine pour 290€/mois</li>
-        </ul>
-      </div>
-      <div class="image">
-        <img src="../img/bondinho.jpg">
-      </div>
-    </div>
-  </section>
+      <!-- Bloc 2 -->
+      <figure class="flex flex-col text-start justify-center justify-start items-center p-8 bg-gray-50 rounded-lg border border-black lg:border-r md:p-12">
+        <blockquote class="max-w-2xl text-gray-500">
+          <h2 class="text-xl font-bold text-center text-gray-900 mb-4">
+            Méthodologie
+          </h2>
+          <p class="mb-4">
+            Nous travaillons avec une approche communicative et basée sur les tâches, ce qui signifie que vous apprenez à vous exprimer en portugais tout en développant des compétences pour des situations réelles : converser au quotidien, voyager, étudier, travailler ou simplement plonger dans la culture.
+          </p>
+          <p>
+            Notre méthodologie combine un focus sur la conversation, la phonétique multisensorielle, la grammaire en contexte, la production orale et écrite spontanée, ainsi que l’enseignement du vocabulaire et des expressions idiomatiques en situations réelles. Tout cela est intégré à l’utilisation de jeux, de musique, de littérature, d’art et d’éléments culturels du Brésil et du Portugal — rendant chaque cours dynamique, riche et inspirant.
+          </p>
+        </blockquote> 
+      </figure>
 
-  <!-- À propos -->
-  <section class="sobre" id="a-propos">
-    <div class="container row reverse">
-      <div class="text">
-        <h2>À propos de moi</h2>
-        <p>
-          Bonjour ! Je m'appelle Simone, créatrice de Zuca Tuga — un espace dédié à l’enseignement chaleureux et créatif du portugais pour les étrangers. Je suis brésilienne, je vis au Portugal, et je crois profondément au pouvoir des langues pour rapprocher les personnes, les cultures et les histoires.
-        </p>
-        <p>
-          Ma formation a toujours été tournée vers la langue comme expression de l’identité, de la culture et de la créativité — et c’est justement cette passion qui m’a conduite à l’enseignement du portugais comme langue additionnelle. 
-          Je suis diplômée en Lettres – UNESA, Spécialiste en Enseignement de la Littérature – UFRN, Spécialiste en Linguistique appliquée à l’enseignement des langues – UFMS, et Spécialiste en Enseignement du Portugais pour étrangers – PUCRJ. 
-          Actuellement, je poursuis un Master en Enseignement du Portugais comme Langue Étrangère à la Faculté des Sciences Sociales et Humaines de l’Université NOVA de Lisbonne.
-        </p>
-        <p>
-          Au fil du temps, j’ai construit un parcours solide en tant qu’enseignante, en réunissant des expériences avec des étudiants de nationalités, profils et contextes différents. 
-          Je crois qu’apprendre une nouvelle langue va bien au-delà de la grammaire : c’est une rencontre avec d’autres façons de vivre, de penser et de ressentir. 
-          C’est ce qui me motive en tant qu’éducatrice.
-        </p>
-        <p>
-          Je valorise chaque moment de cours comme une véritable opportunité d’échange. Ce sont des rencontres uniques, remplies d’écoute, de découvertes et d’émotions — des moments où non seulement j’enseigne, mais j’apprends aussi avec chaque élève. 
-          Cette interaction est, pour moi, ce qui donne du sens à mon travail et nourrit mon envie de continuer sur ce chemin.
-        </p>
-        <h4>
-          Soyez les bienvenu(e)s dans notre communauté Zuca Tuga !
-        </h4>
-      </div>
-      <div class="image">
-        <img src="../img/perfil.jpg" alt="...">
-      </div>
+      <!-- Bloc 3 -->
+      <figure class="flex flex-col justify-center justify-start items-center p-8 text-start bg-gray-50 rounded-lg border border-black md:p-12">
+        <blockquote class="max-w-2xl text-gray-500">
+          <h2 class="text-xl font-bold text-center text-gray-900 mb-4">
+            Portugais du Brésil et du Portugal — Vous choisissez votre façon d’apprendre
+          </h2>
+          <p class="mb-4">
+            Chez Zuca Tuga, vous avez la liberté de choisir entre le portugais du Brésil et celui du Portugal — ou même d’apprendre à naviguer entre les deux variantes.
+          </p>
+          <p>
+            Dans les cours, au-delà de la grammaire et du vocabulaire, nous travaillons sur les différences de prononciation, les expressions du quotidien, les styles de communication et les aspects culturels de chaque pays, de manière claire et contextualisée.
+          </p>
+        </blockquote>    
+      </figure>
+
     </div>
-  </section>
+  </div>
+</section>
+
   
-  <!-- Contact -->
-  <section class="contato" id="contact">
-    <div class="container row">
-      <div class="text">
-        <h2>Contact</h2>
-        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:simoneaguiaraulas@gmail.com">simoneaguiaraulas@gmail.com</a></p>
-        <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/+351926473988" target="_blank">+351 926 473 988</a></p>
-        <div class="redes">
-          <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
-          <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+
+  <div class="flex w-full bg-[#F7F4E8] flex-col">
+    <div class="divider opacity-0 "></div>
+    <div class="divider opacity-0"></div>
+    <div class="divider opacity-0 "></div>
+  </div>
+<!-- Seção Sobre -->
+<section class="section-fade-left bg-[#F7F4E8]" id="a-propos">
+  <div class="flex flex-col lg:flex-row lg:items-center">
+    
+    <!-- Photo -->
+    <figure>
+      <img
+        class="mask mask-square rounded-lg border border-black h-128 w-128 object-cover m-24"
+        src="../img/perfil1.jpg"
+        alt="Photo de profil"
+      />
+    </figure>
+    
+    <!-- Texte -->
+    <div class="card-body max-w-3xl p-6 md:p-10 subpixel-antialiased text-black leading-relaxed">
+      <h2 class="text-3xl font-bold text-center lg:text-left text-black mb-6">Qui Je Suis</h2>
+
+      <!-- Modal -->
+      <dialog id="my_modal_1" class="modal bg-[#F7F4E8]">
+        <div class="modal-box bg-[#F7F4E8]">
+          <h3 class="text-lg font-bold text-center m-4">Formation Académique</h3>
+          <p class="mb-4 font-semibold">
+            Mon parcours académique a toujours été centré sur la langue comme expression d'identité, de culture et de créativité — et c’est cette passion qui m’a conduite à enseigner le portugais comme langue supplémentaire.
+          </p>
+          <ul class="mb-4 font-bold list-disc list-inside">
+            <li>Licence en Lettres – Universidade Estácio de Sá (UNESA)</li>
+            <li>Spécialiste en Enseignement de la Littérature – Universidade Federal do Rio Grande do Norte (UFRN)</li>
+            <li>Spécialiste en Linguistique Appliquée à l’Enseignement des Langues – Universidade Federal de Mato Grosso do Sul (UFMS)</li>
+            <li>Spécialiste en Enseignement du Portugais pour Étrangers – Pontifícia Universidade Católica do Rio de Janeiro (PUC-Rio)</li>
+            <li>Étudiante en Master d’Enseignement du Portugais comme Langue Étrangère – Faculdade de Ciências Sociais e Humanas da Universidade NOVA de Lisboa</li>
+          </ul>
+          <div class="modal-action">
+            <form method="dialog">
+              <button class="btn bg-[#F7F4E8] hover:bg-[#004173] hover:text-white hover:border border-white hover:shadow-lg">Fermer</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+
+      <p class="mb-4 font-bold text-center lg:text-left">
+        Bonjour ! Je suis Simone, créatrice de 
+        <span class="font-semibold text-black">Zuca Tuga</span> — un espace chaleureux et créatif dédié à l’enseignement du portugais pour les étrangers. Je suis brésilienne, je vis au Portugal et je crois profondément au pouvoir des langues pour rapprocher les personnes, les cultures et les histoires.
+        Au fil du temps, j’ai construit une carrière solide comme enseignante, en travaillant avec des élèves de nationalités, profils et contextes différents. J’estime que l’apprentissage d’une nouvelle langue va bien au-delà de la grammaire : c’est une rencontre avec d’autres façons de vivre, de penser et de ressentir. Et c’est cela qui me motive en tant qu’éducatrice.
+        Je valorise chaque moment de cours comme une véritable opportunité d’échange. Ce sont des moments uniques, pleins d’écoute, de découverte et d’affection — des instants où je n’enseigne pas seulement, mais j’apprends aussi de chaque élève. Cette interaction est, pour moi, ce qui donne du sens à mon travail et nourrit mon envie de continuer sur cette voie.
+      </p>
+
+      <h4 class="text-center lg:text-left text-xl font-semibold text-[#004173] m-6">
+        Soyez le/la bienvenu(e) dans notre communauté Zuca Tuga !
+      </h4>
+
+      <button class="btn bg-[#F7F4E8] hover:bg-[#004173] hover:text-white hover:border border-white hover:shadow-lg" onclick="my_modal_1.showModal()">
+        Formation Académique
+      </button>
+    </div>
+    
+  </div>
+</section>
+
+
+  
+  
+  <div class="flex w-full bg-[#F7F4E8] flex-col">
+    <div class="divider opacity-0 "></div>
+    <div class="divider opacity-0"></div>
+    <div class="divider opacity-0 "></div>
+  </div>
+
+  <!-- Seção Preços -->
+<section id="precos" class=" section-fade-up opacity-0 py-12 bg-[#004173]">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-10">Nos Forfaits</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+      
+      <!-- Card 1 -->
+      <div class="card w-72 bg-[#F7F4E8] shadow-lg hover:shadow-xl transition hover:bg-black hover:text-white border border-black hover:border border-[#004173] duration-300 transform hover:scale-110 transition ease-linear">
+        <div class="card-body">
+          <span class="badge badge-neutral w-max mb-2">Nouveau Forfait</span>
+          <h2 class="card-title text-xl font-bold">Forfait 1</h2>
+          <p class="text-lg text-gray-600">1 Cours par Semaine</p>
+          <div class="mt-4">
+            <span class="text-2xl font-bold">65€/mois</span>
+          </div> 
         </div>
       </div>
-      <div class="image">
-        <img src="../img/fotoconvento.png" alt="...">
+
+      <!-- Card 2 -->
+      <div class="card w-72 bg-[#F7F4E8] shadow-lg hover:shadow-xl transition hover:bg-yellow-400 border border-yellow-400 hover:border border-[#004173] duration-300 transform hover:scale-110 transition ease-linear">
+        <div class="card-body">
+          <span class="badge badge-warning w-max mb-2">Forfait de Base</span>
+          <h2 class="card-title text-xl font-bold">Forfait 2</h2>
+          <p class="text-lg text-gray-800">2 Cours par Semaine</p>
+          <div class="mt-4">
+            <span class="text-2xl font-bold">110€/mois</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card w-72 bg-[#F7F4E8] shadow-lg hover:shadow-xl transition hover:bg-pink-400 border border-pink-400 hover:border border-[#004173] duration-300 transform hover:scale-110 transition ease-linear">
+        <div class="card-body">
+          <span class="badge badge-secondary w-max mb-2">Meilleur Apprentissage</span>
+          <h2 class="card-title text-xl font-bold">Forfait 3</h2>
+          <p class="text-lg text-gray-800">3 Cours par Semaine</p>
+          <div class="mt-4">
+            <span class="text-2xl font-bold">170€/mois</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card w-72 bg-[#F7F4E8] shadow-lg hover:shadow-xl transition hover:bg-green-400 border border-green-400 hover:border border-[#004173] duration-300 transform hover:scale-110 transition ease-linear">
+        <div class="card-body">
+          <span class="badge badge-success text-black w-max mb-2">Parfait pour Débutants</span>
+          <h2 class="card-title text-xl font-bold">Forfait 4</h2>
+          <p class="text-lg text-gray-800">4 Cours par Semaine</p>
+          <div class="mt-4">
+            <span class="text-2xl font-bold">230€/mois</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card w-72 bg-[#F7F4E8] hover:text-white shadow-lg hover:shadow-xl transition hover:bg-red-600 border border-red-600 hover:border border-[#004173] duration-300 transform hover:scale-110 transition ease-linear">
+        <div class="card-body">
+          <span class="badge bg-red-700 text-white border-red-700 w-max mb-2">Le Plus Populaire</span>
+          <h2 class="card-title text-xl font-bold">Forfait 5</h2>
+          <p class="text-lg text-gray-800">5 Cours par Semaine</p>
+          <div class="mt-4">
+            <span class="text-2xl font-bold">290€/mois</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card w-72 shadow-lg bg-[#F7F4E8] hover:shadow-xl hover:bg-blue-800 transition border border-blue-800 hover:border border-[#004173] hover:text-black duration-300 transform hover:scale-110 transition ease-linear">
+        <div class="card-body">
+          <span class="badge badge-primary w-max mb-2">Plusieurs Étudiants</span>
+          <h2 class="card-title text-xl font-bold">Connexion en Groupe</h2>
+          <p class="text-lg text-gray-800">Cours Collectifs</p>
+          <div class="mt-4">
+            <span class="text-2xl font-bold">Prix Négociable</span>
+          </div>  
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+  <div class="flex w-full bg-[#F7F4E8] flex-col">
+    <div class="divider opacity-0 "></div>
+    <div class="divider opacity-0"></div>
+    <div class="divider opacity-0 "></div>
+  </div>
+
+
+  <!-- Seção duvidas -->
+  <section class=" section-fade-up opacity-0 bg-white py-8" id="metodologias">
+    <h2 class="text-3xl font-bold text-center mb-10">Questions fréquentes</h2>
+  <div class="flex flex-col lg:flex-row w-full max-w-7xl mx-auto items-center justify-center gap-6 px-4">
+
+    <!-- Carousel de Texto (Accordion) -->
+    <div class="w-full lg:w-2/3 flex items-center justify-center">
+      <div class="join join-vertical bg-white text-white  border border-[#004173] w-full lg:w-4/5 rounded-lg overflow-hidden shadow-md border border-white">
+
+        
+      <div class="collapse border border-base-300">
+        <input type="radio" name="my-accordion-1" checked="checked" />
+        <div class="collapse-title font-semibold bg-[#004173]">Mode d’Enseignement</div>
+        <div class="collapse-content text-sm bg-white text-[#004173]">
+          <p>
+            <br>
+              Les cours sont dispensés en ligne via Google Meet, avec matériel inclus et adapté à vos besoins.
+            <br>
+          </p>
+        </div>
+      </div>
+      <div class="collapse border border-base-300">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title font-semibold bg-[#004173]">Moyens de Paiement</div>
+        <div class="collapse-content text-sm bg-white text-[#004173]">
+          <p>
+            <br>
+              Les moyens de paiement incluent virement bancaire, PayPal, MB Way et Pix.
+            <br>
+          </p>
+        </div>
+      </div>
+      <div class="collapse border border-base-300">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title font-semibold bg-[#004173]">Durée des Cours</div>
+        <div class="collapse-content text-sm bg-white text-[#004173]">
+          <p>
+            <br>
+              Les cours durent 60 minutes, avec flexibilité pour s’adapter à vos besoins.
+            <br>
+          </p>
+        </div>
       </div>
     </div>
-  </section>
+</div>
 
-  <footer>
-    <p>&copy; 2025 Cours de Portugais avec ZucaTuga</p>
-  </footer>
+    <!-- Carousel de Imagem -->
+    <div class="w-full lg:w-1/3">
+      <div id="default-carousel" class="relative w-full h-72 sm:h-80 lg:h-96" data-carousel="slide">
+
+        <!-- Carousel wrapper -->
+        <div class="relative h-full overflow-hidden rounded-lg border border-[#004173]">
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="../img/tn5.jpg" class="absolute block w-full h-full object-cover" alt="Bonde">
+          </div>
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="../img/tn6.jpg" class="absolute block w-full h-full object-cover" alt="Rio de Janeiro">
+          </div>
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="../img/tn1.jpg" class="absolute block w-full h-full object-cover" alt="Farol">
+          </div>
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="../img/porto-portugal-1674404189B8D.jpg" class="absolute block w-full h-full object-cover" alt="Porto, Portugal">
+          </div>
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="../img/tn3.jpg" class="absolute block w-full h-full object-cover" alt="Perfil">
+          </div>
+        </div>
+
+        <!-- Indicadores -->
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-3 left-1/2 space-x-3 rtl:space-x-reverse">
+          <button type="button" class="w-3 h-3 rounded-full" data-carousel-slide-to="0"></button>
+          <button type="button" class="w-3 h-3 rounded-full" data-carousel-slide-to="1"></button>
+          <button type="button" class="w-3 h-3 rounded-full" data-carousel-slide-to="2"></button>
+          <button type="button" class="w-3 h-3 rounded-full" data-carousel-slide-to="3"></button>
+          <button type="button" class="w-3 h-3 rounded-full" data-carousel-slide-to="4"></button>
+        </div>
+
+        <!-- Controles -->
+        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-2 sm:px-4 cursor-pointer group" data-carousel-prev>
+          <span class="inline-flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/30 group-hover:bg-white/50">
+            <svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+          </span>
+        </button>
+        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-2 sm:px-4 cursor-pointer group" data-carousel-next>
+          <span class="inline-flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/30 group-hover:bg-white/50">
+            <svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <div class="flex w-full bg-[#F7F4E8] flex-col">
+    <div class="divider opacity-0 "></div>
+    <div class="divider opacity-0"></div>
+    <div class="divider opacity-0 "></div>
+  </div>
+
+
+<section id="contactos" class="w-full min-h-screen bg-[#000] flex items-center justify-center p-8">
+  <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 bg-[#F7F4E8] shadow-xl rounded-xl p-8">
+
+    <!-- Contact Info -->
+    <div class="flex flex-col justify-center space-y-4 text-center md:text-left items-center md:items-start">
+      <h2 class="text-3xl font-bold">Contactez-nous</h2>
+      <p class="text-lg flex items-center gap-2 justify-center md:justify-start">
+        <i class="fa-solid fa-envelope text-primary"></i>
+        <a href="mailto:simoneaguiaraulas@gmail.com" class="link link-hover">simoneaguiaraulas@gmail.com</a>
+      </p>
+      <p class="text-lg flex items-center gap-2 justify-center md:justify-start">
+        <i class="fa-brands fa-whatsapp text-green-500"></i>
+        <a href="https://wa.me/+351926473988" target="_blank" class="link link-hover">+351 926 473 988</a>
+      </p>
+      <div class="flex gap-4 mt-4 flex-wrap justify-center md:justify-start">
+        <a href="https://www.instagram.com/zucatugaaulas/" target="_blank" class="btn btn-outline bg-pink-600 hover:border-pink-600 text-white btn-sm gap-2 hover:bg-[#fff] hover:text-pink-700">
+          <i class="fa-brands fa-instagram"></i> Instagram
+        </a>
+        <a href="#" target="_blank" class="btn btn-outline bg-[#004173] btn-sm gap-2 text-black hover:bg-[#fff] hover:text-[#004173]">
+          <i class="fa-brands fa-facebook"></i> Facebook
+        </a>
+        <a href="#" target="_blank" class="btn btn-outline border-white hover:border-red-600 bg-red-600 btn-sm gap-2 text-white hover:bg-[#fff] hover:text-red-600">
+          <i class="fa-brands fa-youtube"></i> Youtube
+        </a>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="card bg-base-100 shadow-md rounded-xl">
+      <div class="card-body">
+        <h3 class="card-title text-2xl">Envoyer un Message</h3>
+
+        <!-- Animated Success Alert -->
+        <div id="success-alert" class="alert alert-success opacity-0 scale-95 transform transition-all duration-500 mb-4">
+          <i class="fa-solid fa-check"></i>
+          <span>Message envoyé avec succès !</span>>
+        </div>
+
+        <form 
+          id="contact-form"
+          action="https://formsubmit.co/swozum@gmail.com" 
+          method="POST" 
+          class="space-y-4"
+        >
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="">
+
+          <!-- Name -->
+          <div class="form-control">
+            <label class="floating-label">
+              <span>Nom</span>
+              <input type="text" name="name" placeholder="Jhon Doe" class="input input-md w-full" required />
+            </label>
+          </div>
+
+          <!-- Email -->
+          <div class="form-control">
+            <label class="floating-label">
+              <span>Email</span>
+              <input type="email" name="email" placeholder="mail@site.com" class="input input-md w-full" required />
+            </label>
+          </div>
+
+          <!-- Message -->
+          <div class="form-control">
+            <label class="floating-label">
+              <span>Message</span>
+              <textarea name="message" class="textarea textarea-bordered w-full h-32" placeholder="Tapez votre message..." required></textarea>
+            </label>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" class="btn bg-[#004173] border border-[#004173] text-white hover:shadow-lg hover:bg-[#fff] hover:text-[#004173] w-full">Envoyer</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<script>
+  const form = document.getElementById('contact-form');
+  const alertBox = document.getElementById('success-alert');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      // Fade in the alert
+      alertBox.classList.remove('opacity-0', 'scale-95');
+      alertBox.classList.add('opacity-100', 'scale-100');
+      form.reset();
+
+      // Hide the alert after 5 seconds
+      setTimeout(() => {
+        alertBox.classList.remove('opacity-100', 'scale-100');
+        alertBox.classList.add('opacity-0', 'scale-95');
+      }, 5000);
+    } else {
+      alert('Ocorreu um erro ao enviar sua mensagem.');
+    }
+  });
+</script>
+
+
+  
+<footer class="bg-[#F7F4E8] text-black p-10 flex flex-col items-center justify-center text-center">
+  <aside>
+    <img src="../img/logo.jpg" class="w-50 h-30 mx-auto mb-4" alt="Logo">
+    <p>Copyright © <script>document.write(new Date().getFullYear())</script> - All rights reserved</p>
+  </aside>
+</footer>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 
 </body>
+<script>
+if (!localStorage.getItem('langSelected')) {
+  const lang = navigator.language || navigator.userLanguage;
+  if (lang.startsWith('en')) window.location.href = '/en/';
+  else if (lang.startsWith('es')) window.location.href = '/es/';
+  else window.location.href = '/pt/';
+  localStorage.setItem('langSelected', '1');
+}
+</script>
+
 </html>
+
